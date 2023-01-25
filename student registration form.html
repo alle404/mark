@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration </title>
+</head>
+<body>
+  <style>
+    body{
+      text-align: center;
+         background: linear-gradient(blue, purple);
+    }
+    h1{
+      color: brown;
+      font-family: 'Times New Roman', Times, serif;
+
+    }
+    .details{
+      color: rgb(255, 196, 0);
+
+    }
+    .udetails{
+      background-color: rgb(7, 41, 233);
+      
+
+   
+
+    }
+
+  </style>
+  
+    <form name="registration" method="POST" data-netlify="true">  
+       <h1> Student Registeration Form</h1> 
+     <fieldset class="udetails">
+      <legend class="details">
+        Your Details:
+      </legend>
+         <label>
+            Name:
+            <input type="text" name="name" size="30" maxlength="100">
+         </label>
+ <br />
+          <label></br>
+            Course :  
+          </label>   
+          <select>  
+                <option value="HTML & CSS">HTML & CSS</option>  
+                <option value="Java">Java</option>  
+                <option value="JavaScript">JavaScript</option>  
+                <option value="python ">python</option>  
+                <option value="React js">React js</option>  
+                <option value="course1">course1</option>  
+                <option value="Course2">Course2</option>  
+          </select>  
+  
+<br>  
+<br>  
+        <label>   
+           Gender :  
+        </label><br>  
+            <input type="radio" name="male"/> Male <br>  
+            <input type="radio" name="female"/> Female <br>  
+<br>  
+<br>  
+  
+           <label>   
+           Phone :  
+         </label>  
+                   <input type="text" name="country code"  value="+254" size="3"/>   
+                   <input type="text" name="phone" size="10"/> <br> <br>  
+                      Address  
+            <br>  
+                       <textarea cols="20" rows="2" value="address">  
+                      </textarea>  
+<br> <br> 
+          Email:  
+        <input type="email" id="email" name="email"/> <br>    
+<br> 
+            <label>
+              Password:
+              <input type="password" name="password"/>
+            </label>
+ <br />
+         </fieldset>
+ <br />
+          <fieldset>
+           <legend>
+             Your Review:
+           </legend>
+       <p>
+              <label for="hear-about">
+                 How did you hear about us?
+              </label>
+                <select name="referrer" id="hear-about">
+                   <option value="google">Google</option>
+                    <option value="friend">Friend</option>
+                 <option value="advert">Advert</option>
+                 <option value="other">Other</option>
+                </select>
+       </p>
+     <p>Would you visit again?
+
+ <br />
+
+         <label>
+           <input type="radio" name="rating" value="yes" />
+              Yes
+         </label>
+       <label>
+             <input type="radio" name="rating" value="no" />
+             No
+      </label>
+       <label>
+        <input type="radio" name="rating" value="maybe" />
+        Maybe
+       </label>
+    </p>
+       <p>
+        <label for="comments">
+             Describe your current knowledge on the course selected above in detail.
+       </label>
+ <br />
+           <textarea rows="4" cols="40" id="comments">
+          </textarea>
+    </p>
+     <label>
+        <input type="checkbox" name="subscribe" checked="checked" />
+               Sign me up for email updates
+        </label>
+ <br />
+          <input type="submit" value="Submit review" />
+      </fieldset>
+  </form>
+</body>
+</html>
+
